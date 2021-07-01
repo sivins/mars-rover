@@ -1,6 +1,6 @@
 # Mars Rover
 
-# Usage
+## Usage
 
 See included Postman collection or SwaggerGen for usage examples.
 
