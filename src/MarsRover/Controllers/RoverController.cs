@@ -23,9 +23,9 @@ namespace MarsRover.Controllers
         }
 
         [HttpPost("Deploy")]
-        public IActionResult DeployRovers([FromBody] RoverRequest roverRequest)
+        public RoverResponse DeployRovers([FromBody] RoverRequest roverRequest)
         {
-            return Ok(_roverService.DeployRovers(roverRequest));
+            return _roverService.DeployRovers(roverRequest);
         }
     }
 }
