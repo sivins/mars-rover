@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MarsRover.Domain.Errors
 {
-    public class OffPlateauException : Exception
+    public class OffPlateauException : ExecutionException
     {
         public static readonly string OFF_PLATEAU_MESSAGE = "Rover fell off the plateau!";
 

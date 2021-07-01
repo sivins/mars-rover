@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "cc708c77-a2be-43ac-8556-1cf668d53851",
+		"name": "MarsRover",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DeployRovers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"maxX\": 5,\r\n  \"maxY\": 5,\r\n  \"rovers\": [\r\n    {\r\n      \"name\": \"Johnny 5\",\r\n      \"startingX\": 1,\r\n      \"startingY\": 2,\r\n      \"startingZ\": \"N\",\r\n      \"instructions\": \"LMLMLMLMM\"\r\n    },\r\n    {\r\n      \"name\": \"R2D2\",\r\n      \"startingX\": 3,\r\n      \"startingY\": 3,\r\n      \"startingZ\": \"E\",\r\n      \"instructions\": \"MMRMMRMRRM\"\r\n    },\r\n    {\r\n      \"name\": \"Gir\",\r\n      \"startingX\": 0,\r\n      \"startingY\": 0,\r\n      \"startingZ\": \"W\",\r\n      \"instructions\": \"M\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/Rover/Deploy",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Rover",
+						"Deploy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
